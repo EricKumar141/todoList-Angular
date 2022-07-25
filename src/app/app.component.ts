@@ -6,7 +6,6 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular ' + VERSION.major;
   todoList: any[] = [];
   addTask(item: string) {
     this.todoList.push({ id: this.todoList.length, name: item });
