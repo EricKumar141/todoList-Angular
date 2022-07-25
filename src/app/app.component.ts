@@ -8,7 +8,18 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   todoList: any[] = [];
   addTask(item: string) {
-    this.todoList.push({ id: this.todoList.length, name: item });
+    if (item) {
+      this.todoList.push({
+        completed: false,
+        id: this.todoList.length,
+        title: item,
+        userID: 999,
+      });
+      console.log(this.todoList);
+    }
+  }
+  toggleTask(id: number) {
+    this.todoList[id].completed = !this.todoList[id].completed;
     console.log(this.todoList);
   }
   deleteTask(id: number) {

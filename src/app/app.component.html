@@ -7,10 +7,8 @@
 <br />
 <ul *ngFor="let item of todoList">
   <li>
-    {{ item.name }} <input type="checkbox" /><button
-      (click)="deleteTask(item.id)"
-    >
-      Remove
-    </button>
+    {{ item.title }}
+    <input type="checkbox" (click)="toggleTask(item.id)" />
+    <button (click)="deleteTask(item.id)">Remove</button>
   </li>
 </ul>
