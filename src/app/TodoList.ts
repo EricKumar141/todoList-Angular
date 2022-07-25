@@ -13,7 +13,6 @@ export class AppComponent {
         completed: false,
         id: this.todoList.length,
         title: item,
-        userID: 999,
       });
       console.log(this.todoList);
     }
