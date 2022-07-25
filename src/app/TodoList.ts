@@ -1,5 +1,4 @@
 import { Component, VERSION } from '@angular/core';
-
 @Component({
   selector: 'my-app',
   templateUrl: './TodoList.html',
@@ -7,12 +6,13 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   todoList: any[] = [];
+
   addTask(item: string) {
     if (item) {
       this.todoList.push({
-        completed: false,
         id: this.todoList.length,
         title: item,
+        completed: false,
       });
       console.log(this.todoList);
     }
