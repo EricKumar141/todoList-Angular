@@ -1,3 +1,3 @@
-# angular-ivy-czl1w5
+# angular-todoList
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-czl1w5)
+Very Simple Todo List in Angular
